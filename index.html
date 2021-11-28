@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing_page / Anime</title>
     <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.0.0.js"
+ 
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <section>
+    <section id="sectioning">
+   
 <header>
 
-<a href="#" class="logo">Berserk</a>
+<a href="#" class="logo" id="title">Berserk</a>
 
 <div class="toggleMenu" onclick="toggleMenu();">
 </div>
 <ul class="navigation">
 <li><a href="#">Watch</a></li>
-<li><a href="#">Description</a></li>
+<li><a  href="personajes.html">Characters</a></li>
 <li><a href="#">Voices</a></li>
 <li><a href="#">Blog</a></li>
 <li><a href="#">Contacts</a></li>
@@ -26,15 +33,21 @@
 
 <div class="content">
     <div class="contentBx">
-<h2> The world of Berserk 
-    <br>
-    (In Chronological Order) 
+<h2 id="orginal">
+   
 </h2>
-<p>Guts(o Gutts) es un guerrero que lleva una espada mas grande que él, tiene una fuerza inmensa pues puede blandirla con facilidad. Es un mercenario, al que solo le importa luchar. Un dia conoce a Griffith, un caballero líder de una banda conocida como La Banda del Halcón. Guts le reta y Griffith acepta a cambio de que si le vence, él se unirá a su banda.
+<small id="year" style="color: white"></small>
+<p id="description">Guts(o Gutts) es un guerrero que lleva una espada mas grande que él, tiene una fuerza inmensa pues puede blandirla con facilidad. Es un mercenario, al que solo le importa luchar. Un dia conoce a Griffith, un caballero líder de una banda conocida como La Banda del Halcón. Guts le reta y Griffith acepta a cambio de que si le vence, él se unirá a su banda.
 
 </p>
+
+
 <br>
-<a href="#">Get Stared</a>
+
+<input type="text" class="form-control" placeholder="Escriba el codigo anime" id="search" >
+<br>
+<br>
+<button class="text-whie btn bg-primary" id="but"  onclick="obtener();" >Buscar Anime
     </div>
 
 </div>
@@ -59,4 +72,5 @@ function toggleMenu(){
     </script>
 
 </body>
+<script src="api.js"></script>
 </html>

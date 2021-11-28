@@ -18,7 +18,6 @@ font-family: 'Poppins', Sans-Serif;
 
 
 
-
 section{
 
 
@@ -28,6 +27,7 @@ section{
     min-height: 100vh;
     background:url(/img/»Berserk«-Manga-continúa-con-un-nuevo-capítulo.jpg);
 
+ font-weight: 500;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -35,6 +35,7 @@ section{
     align-items: center;
     padding: 100px;
 }
+
 
 header{
 
@@ -100,7 +101,7 @@ header .navigation li a:hover{
 
     font-size: 1.1em;
     color: #fff;
-    font-weight: 300;
+    font-weight: 500;
     margin-inline-end:  20px 0;
 }
 
