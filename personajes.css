@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box ;
+    font-family: 'Poppins', Sans-Serif;
+    transition: all .2s linear;
+
+}
+.x{
+  min-height:100vh;  
+  background:url('img/»Berserk«-Manga-continúa-con-un-nuevo-capítulo.jpg') no-repeat ;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center ;
+  justify-content:center ;
+ flex-wrap:wrap;
+  padding-bottom:80px;
+  
+}
+
+.x .y{
+
+    height:300px;
+    width:150px;
+    border:0px solid rgb(255,255,255);
+    box-shadow:0 7px 7px rgb(00,00,00);
+    overflow:hidden ;
+    margin:25px 15px ;
+}
+.x .y img{
+    height:80%;
+    width:100%;
+    object-fit:cover;  
+    filter:grayscale();
+}
+.x .y:hover img{
+filter:grayscale(0%);
+transform:scale(1.2);
+}
+
+.x .y .z{
+    text-align:center ;
+    background-color:aliceblue;
+    color:rgb(160,60,70);
+    position:relative ;
+    bottom:5px; 
+}
+.x .y:hover .z{
+    bottom:60px;
+}
+
+.x .y .z .title{
+    padding:15px 0px;
+    color:black;
+    font-size:20px;
+    text-transform:capitalize ;
+}
+.x .y .z .post{
+    
+    color:blue;
+    font-size:15px;
+
+    
+} 
+
+.x .y .z .share{
+   margin-top:0px; 
+   border-top:1px solid black; 
+}
+.x .y .z .share a{
+    text-decoration:none;
+    font-size:15px;
+    color: rgb(20,90,200) ; 
+    margin:20px 1px;
+}
+.x .y .z .share a:hover{
+    color:rgb(200,90,200);
+}
+
